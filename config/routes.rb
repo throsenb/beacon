@@ -1,4 +1,8 @@
 Beacon::Application.routes.draw do
+  devise_for :views
+
+  devise_for :users
+
   resources :statuses
   root to: 'statuses#index'
 
